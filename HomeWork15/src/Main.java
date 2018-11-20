@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         //то же, что в v00
         TextAnalyzer a = new JaccardTextAnalyzer();
-        TextAnalyzer b = new CosineTextAnalyzer();
+        TextAnalyzer b = new CosineSimilarity();
         String s1 = "Мама мыла раму, а я ничего не делал";
         String s2 = "Я совсем ничего не делал";
         double coef1 = a.analyze(new SimpleTextProvider(s1), new SimpleTextProvider(s2));
